@@ -1,0 +1,273 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+header{
+    background-color:#cc7400 ;
+    padding: 16px 0; /*1rem 0*/
+}
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+nav{
+    background-color: #f39236;
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    flex-grow: 1;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+footer{
+    background-color: #f3cba6; /*#cccccc*/
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0; /*3rem 0*/
+    margin-top: 20px;
+}
+nav ul li a.activo{
+    background-color: #a36b22;
+}
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+h2{
+    color: #cc7400;
+}
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.portada img {
+    width: 100%;
+}
+.reservas{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.horarios{
+    width: 40%;
+}
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+.reservas p{
+    font-size: 20px;
+}
+.horario{
+    background-color: #ccc;
+    padding: 16px;
+}
+.horario .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+}
+.horario .autor{
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}
+.historia p{
+    font-size: 12px; /*0.7 rem*/
+}
+.precios{
+    display: flex;
+    justify-content: space-between;
+}
+.precio{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+.precio img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.precio h5,
+.precio h6{
+    margin: 0;
+    font-weight: normal;
+    color: #c06600;
+}
+.precio h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.precio h6{
+    font-size: 11px;
+    font-style: italic;
+}
+.precio p{
+    color: #207000;
+    font-size: 10px;
+}
+.alojamiento{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.alojamiento info h3{
+    color: #5ea85c;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #c76a00;
+    padding-bottom: 10px;
+}
+.alojamiento info p{
+    font-size: 13px;
+    /*line-height: 19px*/
+}
+.alojamiento img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+.alojamiento:nth-child(even){
+    flex-direction: row-reverse;
+}
+.galeria{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.galeria img{
+    width: 30%;
+    border: 1px solid #00d81d;
+    padding: 0.3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+.miniatura {
+  width: 150px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.visor {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.visor img {
+  max-width: 90%;
+  max-height: 90%;
+}
+#boton-cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.contacto{
+    display: flex;
+    gap: 24px;
+}
+.contacto div{
+    width: 100%;
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p{
+    display: flex;
+}
+.formulario p label{
+    min-width: 80px;
+}
+.formulario p label{
+    display: flex;
+   align-items: center; 
+}
+.formulario p:nth-child(4){
+    align-items: start;
+}
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+.formulario input [type="submit"]{
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+.formulario input [type="submit"]:hover{
+    background-color: #2e64a1;
+}
+.si {
+    color: green;
+}
+.no {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+}
